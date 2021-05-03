@@ -1,2 +1,92 @@
-# BNlearning
-an efficient approach for learning Bayesian Network Structure
+# BNlearning 
+
+This is the "Bayesian Network Structures Learning Project" (BNlearning), an open-source Java package that offers PEWOBS, WINASOBS, ASOBS, OBS algorithms.
+The PEWOBS algorithm is the major algorithm which developed by Ruihong Xu. And other algorithms are as experimental algorithms which are referenced from Mauro Scanagatta. 
+Beside the algorithms for searching BN with candidate parents sets, this project also contains two approachs for searching candidate parents sets. They are used to process the datasets with few variables and the datasets with mass variables respectively.
+
+## References
+
+This package implements the algorithms detailed in the following papers: 
+* [Learning Bayesian Networks with Thousands of Variables](https://papers.nips.cc/paper/5803-learning-bayesian-networks-with-thousands-of-variables) (NIPS 2015) Mauro Scanagatta, Giorgio Corani, Cassio P. de Campos, Marco Zaffalon
+* [Learning Treewidth-Bounded Bayesian Networks with Thousands of Variables](https://papers.nips.cc/paper/6232-learning-treewidth-bounded-bayesian-networks-with-thousands-of-variables) (NIPS 2016) Mauro Scanagatta, Giorgio Corani, Cassio P. de Campos, Marco Zaffalon
+* [Efficient learning of bounded-treewidth Bayesian networks from complete and incomplete data sets](https://www.sciencedirect.com/science/article/pii/S0888613X17307272) (IJAR 2018) - [supplementary material](supplementary-IJAR.pdf)
+* [Improved Local Search in Bayesian Networks Structure Learning](http://proceedings.mlr.press/v73/scanagatta17a.html) (AMBN 2017)
+* [Approximated Structural Learning for Large Bayesian Networks](https://link.springer.com/article/10.1007/s10994-018-5701-9) (ECML PKDD 2018) [supplementary material](supplementary-ML17.pdf)
+
+## Usage
+
+The usage of this project are shown as follow.
+
+### Input Dataset format
+
+The format for the input dataset must be "XXX.dat", namely a space-separated file containing: 
+
+    * First line: list of variables names, separated by space;
+    * Second line: list of variables cardinalities, separated by space;
+    * Following lines: list of values taken by the variables in each datapoint, separated by space.
+   
+### Candidate Parents sets identification 
+
+The first step of building a Bayesian network structure is searching candidate parents sets for each variable.
+
+```
+java -jar xxx.jar scorer.is -d input.dat -j output.jkl -t 10 -b 0 
+```
+
+Main options: 
+* -d VAL : Datafile input path (.dat format)
+* -j VAL : Parent set scores output file (.jkl format)
+* -t N   : Maximum time limit, in seconds (default: 10)
+* -b N   : Number of machine cores to use - if 0, all are used  (default: 1)
+
+### Learning BN structures form candidate parents sets
+
+On the basis of candidate parents sets, select parents set for each variable and construct a DAG which is the final BN structures.
+
+#### PEWOBS
+
+```
+java -jar xxx.jar scorer.is -d input.dat -j output.jkl -t 10 -b 0 
+```
+
+Main options: 
+* -d VAL : Datafile input path (.dat format)
+* -j VAL : Parent set scores output file (.jkl format)
+* -t N   : Maximum time limit, in seconds (default: 10)
+* -b N   : Number of machine cores to use - if 0, all are used  (default: 1)
+
+#### WINASOBS
+
+```
+java -jar xxx.jar scorer.is -d input.dat -j output.jkl -t 10 -b 0 
+```
+
+Main options: 
+* -d VAL : Datafile input path (.dat format)
+* -j VAL : Parent set scores output file (.jkl format)
+* -t N   : Maximum time limit, in seconds (default: 10)
+* -b N   : Number of machine cores to use - if 0, all are used  (default: 1)
+
+#### ASOBS
+
+```
+java -jar xxx.jar scorer.is -d input.dat -j output.jkl -t 10 -b 0 
+```
+
+Main options: 
+* -d VAL : Datafile input path (.dat format)
+* -j VAL : Parent set scores output file (.jkl format)
+* -t N   : Maximum time limit, in seconds (default: 10)
+* -b N   : Number of machine cores to use - if 0, all are used  (default: 1)
+
+#### OBS
+
+```
+java -jar xxx.jar scorer.is -d input.dat -j output.jkl -t 10 -b 0 
+```
+
+Main options: 
+* -d VAL : Datafile input path (.dat format)
+* -j VAL : Parent set scores output file (.jkl format)
+* -t N   : Maximum time limit, in seconds (default: 10)
+* -b N   : Number of machine cores to use - if 0, all are used  (default: 1)
