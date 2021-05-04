@@ -9,9 +9,7 @@ Beside the algorithms for searching BN with candidate parents sets, this project
 This package implements the algorithms detailed in the following papers: 
 * [Learning Bayesian Networks with Thousands of Variables](https://papers.nips.cc/paper/5803-learning-bayesian-networks-with-thousands-of-variables) (NIPS 2015) Mauro Scanagatta, Giorgio Corani, Cassio P. de Campos, Marco Zaffalon
 * [Learning Treewidth-Bounded Bayesian Networks with Thousands of Variables](https://papers.nips.cc/paper/6232-learning-treewidth-bounded-bayesian-networks-with-thousands-of-variables) (NIPS 2016) Mauro Scanagatta, Giorgio Corani, Cassio P. de Campos, Marco Zaffalon
-* [Efficient learning of bounded-treewidth Bayesian networks from complete and incomplete data sets](https://www.sciencedirect.com/science/article/pii/S0888613X17307272) (IJAR 2018) - [supplementary material](supplementary-IJAR.pdf)
-* [Improved Local Search in Bayesian Networks Structure Learning](http://proceedings.mlr.press/v73/scanagatta17a.html) (AMBN 2017)
-* [Approximated Structural Learning for Large Bayesian Networks](https://link.springer.com/article/10.1007/s10994-018-5701-9) (ECML PKDD 2018) [supplementary material](supplementary-ML17.pdf)
+
 
 ## Usage
 
