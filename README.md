@@ -15,7 +15,7 @@ This package implements the algorithms detailed in the following papers:
 
 The usage of this project are shown as follow.
 
-### Input Dataset format
+### Input Dataset Format
 
 The format for the input dataset must be "XXX.dat", namely a space-separated file containing: 
 
@@ -23,7 +23,7 @@ The format for the input dataset must be "XXX.dat", namely a space-separated fil
     * Second line: list of variables cardinalities, separated by space;
     * Following lines: list of values taken by the variables in each datapoint, separated by space.
    
-### Candidate Parents sets identification 
+### Candidate Parents Sets Identification 
 
 The first step of building a Bayesian network structure is searching candidate parents sets for each variable.
 
@@ -37,7 +37,7 @@ Main options:
 * -t N   : Maximum time limit, in seconds (default: 10)
 * -b N   : Number of machine cores to use - if 0, all are used  (default: 1)
 
-### Learning BN structures form candidate parents sets
+### Learning BN Structures form Candidate Parents Sets
 
 On the basis of candidate parents sets, select parents set for each variable and construct a DAG which is the final BN structures.
 
