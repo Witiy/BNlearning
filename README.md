@@ -46,47 +46,53 @@ On the basis of candidate parents sets, select parents set for each variable and
 #### PEWOBS
 
 ```
-java -jar xxx.jar scorer.is -d input.dat -j output.jkl -t 10 -b 0 
+java -jar xxx.jar solver.pewobs -j input.jkl -r output.res -lm 10 -rt 2 -rr 4 -win 4 -t 10 -b 0 
 ```
 
 Main options: 
-* -d VAL : Datafile input path (.dat format)
-* -j VAL : Parent set scores output file (.jkl format)
+* -j VAL : Candidate Parents sets file (.jkl format)
+* -r VAL : BN Structure file (.res format)
+* -lm N  : Maximum number of variables to calculate FinalScore （default: 10)
+* -rt N  : The number of the shuffle initial orders (default: 2)
+* -rr N  : The rate of the shuffle initial order (default: 4)
+* -win N ：Maximum window size(default: 4)
 * -t N   : Maximum time limit, in seconds (default: 10)
 * -b N   : Number of machine cores to use - if 0, all are used  (default: 1)
 
 #### WINASOBS
 
 ```
-java -jar xxx.jar scorer.is -d input.dat -j output.jkl -t 10 -b 0 
+java -jar xxx.jar solver.winasobs -j input.jkl -r output.res -ent input.dat -win 5 -t 10 -b 0 
 ```
 
 Main options: 
-* -d VAL : Datafile input path (.dat format)
-* -j VAL : Parent set scores output file (.jkl format)
+* -j VAL : Candidate Parents sets file (.jkl format)
+* -r VAL : BN Structure file (.res format)
+* -ent VAL: Datafile input path for using ent approach to generate initial order(.dat format)
+* -win N ：Maximum window size(default: 5)
 * -t N   : Maximum time limit, in seconds (default: 10)
 * -b N   : Number of machine cores to use - if 0, all are used  (default: 1)
 
 #### ASOBS
 
 ```
-java -jar xxx.jar scorer.is -d input.dat -j output.jkl -t 10 -b 0 
+java -jar xxx.jar solver.asobs -j input.jkl -r output.res -ent -t 10 -b 0 
 ```
 
 Main options: 
-* -d VAL : Datafile input path (.dat format)
-* -j VAL : Parent set scores output file (.jkl format)
+* -j VAL : Candidate Parents sets file (.jkl format)
+* -r VAL : BN Structure file (.res format)
 * -t N   : Maximum time limit, in seconds (default: 10)
 * -b N   : Number of machine cores to use - if 0, all are used  (default: 1)
 
 #### OBS
 
 ```
-java -jar xxx.jar scorer.is -d input.dat -j output.jkl -t 10 -b 0 
+java -jar xxx.jar solver.obs -j input.jkl -r output.res -t 10 -b 0 
 ```
 
 Main options: 
-* -d VAL : Datafile input path (.dat format)
-* -j VAL : Parent set scores output file (.jkl format)
+* -j VAL : Candidate Parents sets file (.jkl format)
+* -r VAL : BN Structure file (.res format)
 * -t N   : Maximum time limit, in seconds (default: 10)
 * -b N   : Number of machine cores to use - if 0, all are used  (default: 1)
