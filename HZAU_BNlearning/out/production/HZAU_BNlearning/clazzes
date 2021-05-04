@@ -1,0 +1,8 @@
+scorer.k2 BNlearning.api.learn.scorer.AdvK2ScorerApi K2 Scorer
+scorer.gs BNlearning.api.learn.scorer.GreedyScorerApi Greedy Selection Scorer
+scorer.is BNlearning.api.learn.scorer.IndependenceScorerApi Candidate Parents Sets Search for the Dataset with Mass Variables
+scorer.sq BNlearning.api.learn.scorer.SeqScorerApi Sequential Scorer
+solver.obs BNlearning.api.learn.solver.ObsSolverApi Ordering-based search(OBS)
+solver.asobs BNlearning.api.learn.solver.AsobsSolverApi Acyclic selection OBS(ASOBS)
+solver.winasobs BNlearning.api.learn.solver.win.WinAsobsSolverApi Window ASOBS(WINASOBS)
+solver.pewobs BNlearning.api.learn.solver.PermExtensibleWinSolverApi Permutation and Extensible Ordering-based Search(PEWOBS)
