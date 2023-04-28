@@ -1,7 +1,7 @@
 # BNlearning 
 
 This is the "Bayesian Network Structures Learning Project" (BNlearning), an open-source Java package that offers PEWOBS, WINASOBS, ASOBS, OBS algorithms.
-And other algorithms are as experimental materials. Beside the algorithms for constructing BN with candidate parents sets, this project also contains two approachs for searching candidate parents sets. They are used to process the datasets with few variables and the datasets with mass variables respectively. If you only want to understand PEWOBS algorithm, please focus on `HZAU_BNlearning/src/BNlearning/core/learning/solver/src/pewobs`. Other code base on idsia'work "blip".
+And other algorithms are as experimental materials. Beside the algorithms for constructing BN with candidate parents sets, this project also contains two approachs for searching candidate parents sets. They are used to process the datasets with few variables and the datasets with mass variables respectively. If you only want to understand PEWOBS algorithm, please focus on `HZAU_BNlearning/src/BNlearning/core/learning/solver/src/pewobs`. Other code base on idsia'work blip (https://github.com/mauro-idsia/blip).
 
 # Notice
 
