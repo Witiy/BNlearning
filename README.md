@@ -1,7 +1,15 @@
 # BNlearning 
 
 This is the "Bayesian Network Structures Learning Project" (BNlearning), an open-source Java package that offers PEWOBS, WINASOBS, ASOBS, OBS algorithms.
-The PEWOBS algorithm is the major algorithm which developed by Ruihong Xu. And other algorithms are as experimental materials. Beside the algorithms for constructing BN with candidate parents sets, this project also contains two approachs for searching candidate parents sets. They are used to process the datasets with few variables and the datasets with mass variables respectively. If you only want to understand PEWOBS algorithm, please focus on HZAU_BNlearning/src/BNlearning/core/learning/solver/src/pewobs. Other code base on idsia'work "blip".
+And other algorithms are as experimental materials. Beside the algorithms for constructing BN with candidate parents sets, this project also contains two approachs for searching candidate parents sets. They are used to process the datasets with few variables and the datasets with mass variables respectively. If you only want to understand PEWOBS algorithm, please focus on `HZAU_BNlearning/src/BNlearning/core/learning/solver/src/pewobs`. Other code base on idsia'work "blip".
+
+# Notice
+
+This repository is for the structure learning part of PEWOBS and it does not contain the pruning method for candidate parents sets identification. If you want to use the entire algorithm, please visit (http://122.205.95.139/PEWOBS/), which is also I recommand. Also, you can find the tutorial and configuration of PEWOBS in the website.
+
+## Citation
+
+Xu, R., Liu, S., Zhang, Q., Yang, Z., & Liu, J. (2022). PEWOBS: An efficient Bayesian network learning approach based on permutation and extensible ordering-based search. Future Generation Computer Systems, 128, 505-520. (https://www.sciencedirect.com/science/article/abs/pii/S0167739X21004222)
 
 ## References
 
