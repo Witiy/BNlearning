@@ -5,7 +5,7 @@ And other algorithms are as experimental materials. Beside the algorithms for co
 
 # Notice
 
-This repository is for the structure learning part of PEWOBS and it does not contain the pruning method for candidate parents sets identification. If you want to use the entire algorithm, please visit (http://122.205.95.139/PEWOBS/), which is also I recommand. Also, you can find the tutorial and configuration of PEWOBS in the website.
+This repository is for the structure learning part of PEWOBS and it does not contain the local learning method for candidate parents sets identification. If you want to use the entire algorithm, please visit (http://122.205.95.139/PEWOBS/), which is also I recommand. Also, you can find the tutorial and configuration of PEWOBS in the website.
 
 ## Citation
 
